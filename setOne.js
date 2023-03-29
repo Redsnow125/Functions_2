@@ -87,13 +87,13 @@ const pricesPlusTax = (arr,callback) =>{
     }
     callback(totalCost);
 }
-const totalPrint = (totalC) => console.log(`The new array plus tax = ${totalC}`)
+
 /* 
 Invoke the 'pricesPlusTax' function, passing in the 'prices' array and a callback function (passing in 'totalCost' as a param) that will print "The new array plus tax = [totalCost]"
 */
 
 // CODE HERE
-pricesPlusTax(prices,totalPrint)
+pricesPlusTax(prices,(totalC) => console.log(`The new array plus tax = ${totalC}`))
 
 ////////// PROBLEM 5 //////////
 
